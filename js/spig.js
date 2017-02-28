@@ -1,10 +1,9 @@
 /* spig.js */
-//右键菜单
+//Right click menu
 jQuery(document).ready(function ($) {
     $("#spig").mousedown(function (e) {
         if(e.which==3){
-        showMessage("天气播报<iframe name=\"xidie\" src=\"http://t.xidie.com/skin/2012-0226.html\"frameborder=\“0\” scrolling=\"no\" height=\"50px\"  width=\"200px\" allowtransparency=\"true\" ></iframe>" +
-                    "</br>秘密通道:<br /><a href=\"http://www.gndrive.org/feed/\" title=\"订阅\">订阅</a>    <a href=\"http://www.lostscroll.com\" title=\"濯桑首页\"濯桑首页</a>",10000);
+        showMessage("Secret Door:<br /><a href=\"http://www.lostscroll.com/\" title=\"zhuozhuozhuol\">My Home Page</a>",10000);
 }
 });
 $("#spig").bind("contextmenu", function(e) {
@@ -12,7 +11,7 @@ $("#spig").bind("contextmenu", function(e) {
 });
 });
 
-//鼠标在消息上时
+//When mouse hover on the message
 jQuery(document).ready(function ($) {
     $("#message").hover(function () {
        $("#message").fadeTo("100", 1);
@@ -61,10 +60,10 @@ jQuery(document).ready(function ($) {
 	    queue: false,
 	    duration: 1000
 	});
-//    window.setTimeout(function () {
-//        showMessage("下面播报明日天气<iframe name=\"xidie\" src=\"http://t.xidie.com/skin/2010-0601.html\"frameborder=\“0\” scrolling=\"no\" height=\"75px\"  width=\"145px\" allowtransparency=\"true\" ></iframe>", 10000);
-//    },
-//	4000);
+    window.setTimeout(function () {
+        showMessage("Now the time for ads: <iframe name=\"xidie\" src=\"http://lostscroll.com\"frameborder=\“0\” scrolling=\"no\" height=\"75px\"  width=\"145px\" allowtransparency=\"true\" ></iframe>", 10000);
+    },
+	4000);
 });
 
 //鼠标在某些元素上方时
@@ -131,7 +130,7 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
 
     window.setInterval(function () {
-        msgs = ["天气播报<iframe name=\"xidie\" src=\"http://t.xidie.com/skin/2012-0226.html\"frameborder=\“0\” scrolling=\"no\" height=\"40px\"  width=\"200px\" allowtransparency=\"true\" ></iframe>", "陪我聊天吧！", "<a href=\"http://gndrive.org/feed/\" target=\"_blank\" rel=\"external\" tip=\"Feed\"><img border=\"0\" title=\"订阅第一推动力\" alt=\"Feed\" src=\"/pet/rss.png\"></a>", "好无聊哦，你都不陪我玩！", "…@……!………", "^%#&*!@*(&#)(!)(", "我可爱吧！嘻嘻!~^_^!~~","你是我的小呀小苹果~~","从前有座山，山上有座庙，庙里有个老和尚给小和尚讲故事，讲：“从前有座……”"];
+        msgs = ["好无聊哦，你都不陪我玩！", "…@……!………", "^%#&*!@*(&#)(!)(", "我可爱吧！嘻嘻!~^_^!~~","你是我的小呀小苹果~~","从前有座山，山上有座庙，庙里有个老和尚给小和尚讲故事，讲：“从前有座……”"];
         var i = Math.floor(Math.random() * msgs.length);
         showMessage(msgs[i], 10000);
     }, 35000);
@@ -140,7 +139,7 @@ jQuery(document).ready(function ($) {
 //无聊动动
 jQuery(document).ready(function ($) {
     window.setInterval(function () {
-        msgs = ["天气播报<iframe name=\"xidie\" src=\"http://t.xidie.com/skin/2012-0226.html\"frameborder=\“0\” scrolling=\"no\" height=\"40px\"  width=\"200px\" allowtransparency=\"true\" ></iframe>", "快快订阅我的博客吧！<a href=\"http://gndrive.org/feed/\" target=\"_blank\" rel=\"external\" tip=\"Feed\"><img border=\"0\" title=\"订阅第一推动力\" alt=\"Feed\" src=\"/pet/rss.png\"></a>", "乾坤大挪移！", "我飘过来了！~", "我飘过去了", "我得意地飘！~飘！~"];
+        msgs = ["乾坤大挪移！", "我飘过来了！~", "我飘过去了", "我得意地飘！~飘！~"];
         var i = Math.floor(Math.random() * msgs.length);
         s = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6,0.7,0.75,-0.1, -0.2, -0.3, -0.4, -0.5, -0.6,-0.7,-0.75];
         var i1 = Math.floor(Math.random() * s.length);
