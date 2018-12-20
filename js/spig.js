@@ -61,7 +61,7 @@ jQuery(document).ready(function ($) {
 	    duration: 1000
 	});
     window.setTimeout(function () {
-        showMessage("Now the time for ads: <iframe name=\"xidie\" src=\"http://lostscroll.com\"frameborder=\“0\” scrolling=\"no\" height=\"75px\"  width=\"145px\" allowtransparency=\"true\" ></iframe>", 10000);
+        showMessage("Now the time for ads: <iframe name=\"xidie\" src=\"http://lostscroll.com\"frameborder=\“0\” scrolling=\"no\" height=\"25px\"  width=\"45px\" allowtransparency=\"true\" ></iframe>", 10000);
     },
 	4000);
 });
@@ -250,7 +250,7 @@ jQuery(document).ready(function ($) {
         }
     });
 });
-//显示消息函数 
+//显示消息函数
 function showMessage(a, b) {
     if (b == null) b = 10000;
     jQuery("#message").hide().stop();
@@ -272,7 +272,7 @@ jQuery(document).ready(function ($) {
      });
     $(document).mousemove(function (e) {
         if (_move) {
-            var x = e.pageX - _x; 
+            var x = e.pageX - _x;
             var y = e.pageY - _y;
             var wx = $(window).width() - $('#spig').width();
             var dy = $(document).height() - $('#spig').height();
@@ -288,6 +288,3 @@ jQuery(document).ready(function ($) {
         _move = false;
     });
 });
-                            
-                            
-                            
